@@ -1,0 +1,26 @@
+package com.hcl.springdemo;
+
+public class Employee {
+
+	private String eName;
+	private String eId;
+	
+	public String geteName() {
+		return eName;
+	}
+	public void seteName(String eName) {
+		this.eName = eName;
+	}
+	public String geteId() {
+		return eId;
+	}
+	public void seteId(String eId) {
+		this.eId = eId;
+	}
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

@@ -1,0 +1,23 @@
+package com.hcl.annobased;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Breakfast {
+
+	@Autowired
+	Pepsi pepsi;
+
+	public Pepsi getPepsi() {
+		return pepsi;
+	}
+
+	public void setPepsi(Pepsi pepsi) {
+		this.pepsi = pepsi;
+	}
+	
+	public void eat()
+	{
+	System.out.println("Eating Breakfast");
+	pepsi.drink();
+	}
+}

@@ -1,0 +1,13 @@
+package com.hcl.javaAnnotation;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Pizza implements ColdDrink {
+
+	public void drink() {
+		System.out.println("Eating Pizza with ColdDrink");
+		
+	}
+
+}

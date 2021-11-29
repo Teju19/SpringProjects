@@ -1,0 +1,33 @@
+package com.hcl.xmlBased;
+
+public class Employee {
+	private String eName;
+	private String eDesignation;
+
+	public Employee() {
+
+	}
+
+	public Employee(String eName, String eDesignation) {
+		super();
+		this.eName = eName;
+		this.eDesignation = eDesignation;
+	}
+
+	public String geteName() {
+		return eName;
+	}
+
+	public void seteName(String eName) {
+		this.eName = eName;
+	}
+
+	public String geteDesignation() {
+		return eDesignation;
+	}
+
+	public void seteDesignation(String eDesignation) {
+		this.eDesignation = eDesignation;
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.hcl.javaAnnotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		AbstractApplicationContext context = new AnnotationConfigApplicationContext("AppConfig.class");
+		Dosa d=context.getBean(Dosa.class);
+		d.eat();
+
+	}
+
+}

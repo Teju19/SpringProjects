@@ -1,0 +1,16 @@
+package com.hcl.stereotypeannotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Controller;
+
+@ComponentScan
+@Controller("employeeController")
+public class EmployeeController {
+	@Autowired
+	EmployeeOfficer officer;
+
+	public Employee createNewEmployee() {
+		return officer.createNewEmployee();
+	}
+}

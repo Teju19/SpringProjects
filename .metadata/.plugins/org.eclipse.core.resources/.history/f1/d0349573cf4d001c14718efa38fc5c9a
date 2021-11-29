@@ -1,0 +1,9 @@
+package com.hcl.stereotypeannotation;
+
+public interface EmployeeData {
+
+	public interface EmployeeDAO 
+	{
+	    public Employee createNewEmployee();
+	}
+}

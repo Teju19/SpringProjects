@@ -1,0 +1,16 @@
+package com.hcl.javaAnnotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext("AppConfig.class");
+		//Dosa d=context.getBean(Dosa.class);
+		//d.eat();
+Samosa s=context.getBean(Samosa.class);
+System.out.println(s);
+	}
+
+}

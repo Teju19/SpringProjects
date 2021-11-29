@@ -1,0 +1,7 @@
+package com.hcl.stereotypeannotation;
+
+public class Employee {
+	private int eId;
+	private String eName;
+	private String eCity;
+}

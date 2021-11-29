@@ -1,0 +1,26 @@
+package com.hcl.stereotypeannotation;
+
+public class Employee {
+	private Integer eId;
+	private String eName;
+	private String eCity;
+	public int geteId() {
+		return eId;
+	}
+	public void seteId(int eId) {
+		this.eId = eId;
+	}
+	public String geteName() {
+		return eName;
+	}
+	public void seteName(String eName) {
+		this.eName = eName;
+	}
+	public String geteCity() {
+		return eCity;
+	}
+	public void seteCity(String eCity) {
+		this.eCity = eCity;
+	}
+	
+}

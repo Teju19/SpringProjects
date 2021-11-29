@@ -1,0 +1,27 @@
+package com.hcl.javaAnnotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Dosa {
+	
+	@Autowired
+	@Qualifier("Pizza")
+	ColdDrink coldDrink;
+
+	public ColdDrink getColdDrink() {
+		return coldDrink;
+	}
+
+	public void setColdDrink(ColdDrink coldDrink) {
+		this.coldDrink = coldDrink;
+
+	}
+
+	public void eat() {
+		System.out.println("Eating Dosa");
+		coldDrink.drink();
+	}
+}

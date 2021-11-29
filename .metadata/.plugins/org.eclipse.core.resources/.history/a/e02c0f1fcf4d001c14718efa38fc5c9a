@@ -1,0 +1,16 @@
+package com.hcl.stereotypeannotation;
+
+import org.springframework.stereotype.Repository;
+
+public class EmployeeDataImple implements EmployeeData {
+
+	@Repository("employeeData")
+	public Employee createNewEmployee()
+    {
+        Employee emp = new Employee();
+        emp.set eId(1);
+        emp.set eName("Tejaswini");
+        emp.set eCity("Nagpur");
+        return emp;
+    }
+}

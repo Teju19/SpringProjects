@@ -1,0 +1,13 @@
+package com.hcl.stereotypeannotation;
+
+public class EmployeeDataImple implements EmployeeData {
+
+	public Employee createNewEmployee()
+    {
+        Employee emp = new Employee();
+        emp.set eId(1);
+        emp.set eName("Tejaswini");
+        emp.set eCity("Nagpur");
+        return emp;
+    }
+}

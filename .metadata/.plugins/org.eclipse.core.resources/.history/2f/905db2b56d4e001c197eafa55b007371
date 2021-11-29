@@ -1,0 +1,35 @@
+package com.hcl.xmlBased;
+
+public class Employee {
+	private String eName;
+	private String eDesignation;
+	private Project project;
+
+	public Employee() {
+		System.out.println("Employee Default Constructor called");
+	}
+
+	public Employee(String eName, String eDesignation, Project project) {
+		super();
+		this.eName = eName;
+		this.eDesignation = eDesignation;
+		this.project= project;
+	}
+
+	public String geteName() {
+		return eName;
+	}
+
+	public void seteName(String eName) {
+		this.eName = eName;
+	}
+
+	public String geteDesignation() {
+		return eDesignation;
+	}
+
+	public void seteDesignation(String eDesignation) {
+		this.eDesignation = eDesignation;
+	}
+
+}

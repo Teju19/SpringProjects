@@ -1,0 +1,5 @@
+package com.hcl.springExample1;
+
+public interface Colddrink {
+	void drink();
+}

@@ -1,0 +1,5 @@
+package com.hcl.javaAnnotation;
+
+public interface ColdDrink {
+	void drink();
+}
